@@ -1,0 +1,80 @@
+# ====================================================================
+# AI Fashion Studio — pubspec.yaml (launcher icon section)
+# ====================================================================
+# Add the flutter_launcher_icons configuration below to your pubspec.yaml
+# Then run: dart run flutter_launcher_icons
+
+name: ai_fashion_studio
+description: "AI Fashion Studio — Premium AI-powered fashion application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  go_router: ^14.2.7
+  flutter_hooks: ^0.20.5
+  lottie: ^3.1.2
+  cupertino_icons: ^1.0.8
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+  dio: ^5.7.0
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+  shared_preferences: ^2.3.2
+  flutter_secure_storage: ^9.2.2
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.1.3
+  firebase_analytics: ^11.3.3
+  firebase_crashlytics: ^4.1.3
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.1.3
+  flutter_stripe: ^11.0.0
+  webview_flutter: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+
+# ====================================================================
+# Launcher Icons Configuration
+# ====================================================================
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0A0A0F"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#0A0A0F"
+    theme_color: "#0A0A0F"
+
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    icon_size: 256
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+    - assets/images/
+    - assets/animations/

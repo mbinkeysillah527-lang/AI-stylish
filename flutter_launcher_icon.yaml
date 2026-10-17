@@ -1,0 +1,45 @@
+# flutter_launcher_icon.yaml
+# AI Fashion Studio - Launcher Icon Configuration
+#
+# Install the package:
+#   dart pub global activate flutter_launcher_icons
+#   # or add to dev_dependencies in pubspec.yaml:
+#   # flutter_launcher_icons: ^0.14.3
+#
+# Generate icons:
+#   dart run flutter_launcher_icons
+#
+# This generates icons for:
+#   - Android (adaptive + legacy)
+#   - iOS (all required sizes)
+#   - Web favicon
+#   - macOS
+#   - Windows
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+
+  # Adaptive icon (Android 8.0+)
+  adaptive_icon_background: "#0A0A0F"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+  # Web
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#0A0A0F"
+    theme_color: "#0A0A0F"
+
+  # macOS
+  macos:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+
+  # Windows
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    icon_size: 256
